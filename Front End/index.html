@@ -1,0 +1,175 @@
+<html>
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116538965-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-116538965-1');
+	</script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=2">
+	<title>colors</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta property="og:site_name" content="colors">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="newcss.css?version=3">
+	<script src="http://rawgit.com/ethereum/web3.js/0.16.0/dist/web3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/ethjs@0.3.0/dist/ethjs.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<div class="metamask" id="metamaskbox" style="visibility:hidden">
+	<p class="text-align-center"><a href="https://metamask.io" target="_blank"><img src="metamaskicon.png"/></a></p></div>
+	<div class="text-align-center twitter"><a href="https://www.twitter.com/colors_gg" target="_blank"><img src="twitter.png" /></a></div>
+	<div class="overlay" id="overlay" style="visibility:hidden">
+	<div class="hoverfade" style="background-color:#b00e10;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickRed()"></a></div>
+	<div class="hoverfade" style="background-color:#c9840b;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickOrange()"></a></div>
+	<div class="hoverfade" style="background-color:#d1c600;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickYellow()"></a></div>
+	<div class="hoverfade" style="background-color:#119f02;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickGreen()"></a></div>
+	<div class="hoverfade" style="background-color:#082ba3;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickBlue()"></a></div>
+	<div class="hoverfade" style="background-color:#059386;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickTeal()"></a></div>
+	<div class="hoverfade" style="background-color:#49039f;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickPurple()"></a></div>
+	<div class="hoverfade" style="background-color:#a90ba7;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickPink()"></a></div>
+	<div class="hoverfade" style="background-color:#101010;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickBlack()"></a></div>
+	<div class="hoverfade" style="background-color:#989898;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:pickWhite()"></a></div>
+	</div>
+	<div class="belowoverlay" id="belowoverlay"style="visibility:hidden">
+	<div style="float:left; width:5%;height:100%;"></div>
+	<div class="belowoverlaytext"><span>C</span></div>
+	<div class="belowoverlaytext"><span>O</span></div>
+	<div class="belowoverlaytext"><span>L</span></div>
+	<div class="belowoverlaytext"><span>O</span></div>
+	<div class="belowoverlaytext"><span>R</span></div>
+	<div class="belowoverlaytext"><span>S</span></div>
+	<div class="belowoverlaytext"><span>.</span></div>
+	<div class="belowoverlaytext"><span>G</span></div>
+	<div class="belowoverlaytext"><span>G</span></div>
+	</div>
+	<div id="chatscreen" style="visibility:hidden">
+    <div id="top_frame" src="">
+	<div class="topcontainer" style="background-color:#b00e10"><a class="fill-div" href="javascript:chooseRed()"><span><p class="colorcount" id="redCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#c9840b"><a class="fill-div" href="javascript:chooseOrange()"><span><p class="colorcount" id="orangeCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#d1c600"><a class="fill-div" href="javascript:chooseYellow()"><span><p class="colorcount" id="yellowCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#119f02"><a class="fill-div" href="javascript:chooseGreen()"><span><p class="colorcount" id="greenCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#082ba3"><a class="fill-div" href="javascript:chooseBlue()"><span><p class="colorcount" id="blueCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#059386"><a class="fill-div" href="javascript:chooseTeal()"><span><p class="colorcount" id="tealCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#49039f"><a class="fill-div" href="javascript:choosePurple()"><span><p class="colorcount" id="purpleCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#a90ba7"><a class="fill-div" href="javascript:choosePink()"><span><p class="colorcount" id="pinkCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#101010"><a class="fill-div" href="javascript:chooseBlack()"><span><p class="colorcount" id="blackCount"></p></span></a></div>
+	<div class="topcontainer" style="background-color:#989898"><a class="fill-div" href="javascript:chooseWhite()"><span><p class="colorcount" id="whiteCount"></p></span></a></div>
+	</div>
+		<div class="containall">
+    <div style="background-color:#3d3d3d"id="right_frame" src="">
+	<form class="message-form" onsubmit="return false;">
+		<input id="sendmsg" onkeypress="return myscript(event,this)" class="message-form__input" placeholder=". . ." type="text"/>
+		</form>
+		<div class="messages">
+		<!--<p class="idclass" id="message1id"><div class="messageblack" id="message1"></div></p>
+		<p class="idclass" id="message2id"><div class="messageblack" id="message2"></div></p>
+		<p class="idclass" id="message3id"><div class="messageblack" id="message3"></div></p>
+		<p class="idclass" id="message4id"><div class="messageblack" id="message4"></div></p>
+		<p class="idclass" id="message5id"><div class="messageblack" id="message5"></div></p>
+		<p class="idclass" id="message6id"><div class="messageblack" id="message6"></div></p>
+		<p class="idclass" id="message7id"><div class="messageblack" id="message7"></div></p>
+		<p class="idclass" id="message8id"><div class="messageblack" id="message8"></div></p>
+		<p class="idclass" id="message9id"><div class="messageblack" id="message9"></div></p>
+		<p class="idclass" id="message10id"><div class="messageblack" id="message10"></div></p>
+		<p class="idclass" id="message11id"><div class="messageblack" id="message11"></div></p>
+		<p class="idclass" id="message12id"><div class="messageblack" id="message12"></div></p>
+		<p class="idclass" id="message13id"><div class="messageblack" id="message13"></div></p>
+		<p class="idclass" id="message14id"><div class="messageblack" id="message14"></div></p>
+		<p class="idclass" id="message15id"><div class="messageblack" id="message15"></div></p>
+		<p class="idclass" id="message16id"><div class="messageblack" id="message16"></div></p>
+		<p class="idclass" id="message17id"><div class="messageblack" id="message17"></div></p>
+		<p class="idclass" id="message18id"><div class="messageblack" id="message18"></div></p>
+		<p class="idclass" id="message19id"><div class="messageblack" id="message19"></div></p>-->
+		<p class="idclass" id="message20id"><div class="messageblack" id="message20"></div></p>
+		<p class="idclass" id="message21id"><div class="messageblack" id="message21"></div></p>
+		<p class="idclass" id="message22id"><div class="messageblack" id="message22"></div></p>
+		<p class="idclass" id="message23id"><div class="messageblack" id="message23"></div></p>
+		<p class="idclass" id="message24id"><div class="messageblack" id="message24"></div></p>
+		<p class="idclass" id="message25id"><div class="messageblack" id="message25"></div></p>
+		<p class="idclass" id="message26id"><div class="messageblack" id="message26"></div></p>
+		<p class="idclass" id="message27id"><div class="messageblack" id="message27"></div></p>
+		<p class="idclass" id="message28id"><div class="messageblack" id="message28"></div></p>
+		<p class="idclass" id="message29id"><div class="messageblack" id="message29"></div></p>
+		<p class="idclass" id="message30id"><div class="messageblack" id="message30"></div></p>
+		<p class="idclass" id="message31id"><div class="messageblack" id="message31"></div></p>
+		<p class="idclass" id="message32id"><div class="messageblack" id="message32"></div></p>
+		<p class="idclass" id="message33id"><div class="messageblack" id="message33"></div></p>
+		<p class="idclass" id="message34id"><div class="messageblack" id="message34"></div></p>
+		<p class="idclass" id="message35id"><div class="messageblack" id="message35"></div></p>
+		<p class="idclass" id="message36id"><div class="messageblack" id="message36"></div></p>
+		<p class="idclass" id="message37id"><div class="messageblack" id="message37"></div></p>
+		<p class="idclass" id="message38id"><div class="messageblack" id="message38"></div></p>
+		<p class="idclass" id="message39id"><div class="messageblack" id="message39"></div></p>
+		<p class="idclass" id="message40id"><div class="messageblack" id="message40"></div></p>
+		<p class="idclass" id="message41id"><div class="messageblack" id="message41"></div></p>
+		<p class="idclass" id="message42id"><div class="messageblack" id="message42"></div></p>
+		<p class="idclass" id="message43id"><div class="messageblack" id="message43"></div></p>
+		<p class="idclass" id="message44id"><div class="messageblack" id="message44"></div></p>
+		<p class="idclass" id="message45id"><div class="messageblack" id="message45"></div></p>
+		<p class="idclass" id="message46id"><div class="messageblack" id="message46"></div></p>
+		<p class="idclass" id="message47id"><div class="messageblack" id="message47"></div></p>
+		<p class="idclass" id="message48id"><div class="messageblack" id="message48"></div></p>
+		<p class="idclass" id="message49id"><div class="messageblack" id="message49"></div></p>
+		<p class="idclass" id="message50id"><div class="messageblack" id="message50"></div></p>
+		<p class="idclass" id="message51id"><div class="messageblack" id="message51"></div></p>
+		<p class="idclass" id="message52id"><div class="messageblack" id="message52"></div></p>
+		<p class="idclass" id="message53id"><div class="messageblack" id="message53"></div></p>
+		<p class="idclass" id="message54id"><div class="messageblack" id="message54"></div></p>
+		<p class="idclass" id="message55id"><div class="messageblack" id="message55"></div></p>
+		<p class="idclass" id="message56id"><div class="messageblack" id="message56"></div></p>
+		<p class="idclass" id="message57id"><div class="messageblack" id="message57"></div></p>
+		<p class="idclass" id="message58id"><div class="messageblack" id="message58"></div></p>
+		<p class="idclass" id="message59id"><div class="messageblack" id="message59"></div></p>
+		<p class="idclass" id="message60id"><div class="messageblack" id="message60"></div></p>
+		<p class="idclass" id="message61id"><div class="messageblack" id="message61"></div></p>
+		<p class="idclass" id="message62id"><div class="messageblack" id="message62"></div></p>
+		<p class="idclass" id="message63id"><div class="messageblack" id="message63"></div></p>
+		<p class="idclass" id="message64id"><div class="messageblack" id="message64"></div></p>
+		<p class="idclass" id="message65id"><div class="messageblack" id="message65"></div></p>
+		<p class="idclass" id="message66id"><div class="messageblack" id="message66"></div></p>
+		<p class="idclass" id="message67id"><div class="messageblack" id="message67"></div></p>
+		<p class="idclass" id="message68id"><div class="messageblack" id="message68"></div></p>
+		<p class="idclass" id="message69id"><div class="messageblack" id="message69"></div></p>
+		<p class="idclass" id="message70id"><div class="messageblack" id="message70"></div></p>
+		<p class="idclass" id="message0id"><div class="messageblack" id="message0">.</div></p>
+		<p class="idclass" id="message0id"><div class="messageblack" id="message0">.</div></p>
+		<p class="idclass" id="message0id"><div class="messageblack" id="message0">.</div></p>
+		</div>
+	</div></div>
+	<script src="main.js?version=3"></script>
+	<div class="belowfooter">
+	<div style="float:left; width:5%;height:100%;"></div>
+	<div class="belowfootertext"><span>C</span></div>
+	<div class="belowfootertext"><span>O</span></div>
+	<div class="belowfootertext"><span>L</span></div>
+	<div class="belowfootertext"><span>O</span></div>
+	<div class="belowfootertext"><span>R</span></div>
+	<div class="belowfootertext"><span>S</span></div>
+	<div class="belowfootertext"><span>.</span></div>
+	<div class="belowfootertext"><span>G</span></div>
+	<div class="belowfootertext"><span>G</span></div>
+	</div>
+	<div id="footer" class="footer" style="visibility:hidden">
+	<div class="hoverfade2" style="background-color:#b00e10;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseRed()"></a></div>
+	<div class="hoverfade2" style="background-color:#c9840b;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseOrange()"></a></div>
+	<div class="hoverfade2" style="background-color:#d1c600;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseYellow()"></a></div>
+	<div class="hoverfade2" style="background-color:#119f02;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseGreen()"></a></div>
+	<div class="hoverfade2" style="background-color:#082ba3;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseBlue()"></a></div>
+	<div class="hoverfade2" style="background-color:#059386;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseTeal()"></a></div>
+	<div class="hoverfade2" style="background-color:#49039f;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:choosePurple()"></a></div>
+	<div class="hoverfade2" style="background-color:#a90ba7;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:choosePink()"></a></div>
+	<div class="hoverfade2" style="background-color:#101010;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseBlack()"></a></div>
+	<div class="hoverfade2" style="background-color:#989898;float:left; width:10%;height:100%;"><a class="fill-div" href="javascript:chooseWhite()"></a></div>
+	</div>
+	</div>
+</body>
+</html>
